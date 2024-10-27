@@ -1,0 +1,83 @@
+
+//----
+//----common application texts
+//----
+APP_TITLE                                  = "ToriLogic USB DFU";
+APP_MENU_ITEM_ABOUT                        = "About USB Device Firmware Upgrade";
+APP_MENU_ITEM_QUIT                         = "Quit USB Device Firmware Upgrade";
+APP_BUTTON_CLOSE                           = "Exit";
+
+//----
+//----language selection dialog texts
+//----
+LANG_SELECTION_DLG_SUBTITLE                = "Please select a language.";
+LANG_SELECTION_DLG_BUTTON_CONTINUE         = "Continue";
+
+//----
+//----device-specific texts
+//----
+GROUP_DEVICE_TITLE                         = "Device";
+GROUP_DEVICE_LABEL_MANUFACTURER            = "Manufacturer:";
+GROUP_DEVICE_LABEL_PRODUCT                 = "Product:";
+GROUP_DEVICE_LABEL_VID_PID                 = "VID/PID:";
+GROUP_DEVICE_LABEL_SERIAL_NUMBER           = "Serial Number:";
+GROUP_DEVICE_LABEL_FIRMWARE_VERSION        = "Current Firmware:";
+
+//----
+//----firmware-specific texts
+//----
+GROUP_FIRMWARE_TITLE                       = "Firmware";
+GROUP_FIRMWARE_BUTTON_BROWSE               = "Browse...";
+
+//----
+//----upgrade-specific texts
+//----
+GROUP_UPGRADE_TITLE                        = "Upgrade";
+GROUP_UPGRADE_STATUSTEXT_IDLE              = "";
+GROUP_UPGRADE_STATUSTEXT_OPEN_DEVICE       = "Device has been detected.";
+GROUP_UPGRADE_STATUSTEXT_READY             = "Ready for firmware update.";
+//----NOTE: The strings ${CurrentVersion} and ${NewVersion} are placeholders for the current and
+//----new firmware version and must not be changed! They must be present in every translation.
+GROUP_UPGRADE_STATUSTEXT_READY_VERSION     = "Ready for firmware update from version ${CurrentVersion} to ${NewVersion}.";
+GROUP_UPGRADE_STATUSTEXT_INIT              = "Initializing...";
+GROUP_UPGRADE_STATUSTEXT_ENTER_DFU         = "Entering upgrade mode...";
+GROUP_UPGRADE_STATUSTEXT_IN_PROGRESS       = "Upgrading firmware...";
+//----NOTE: The strings ${CurrentBytes} and ${TotalBytes} are placeholders for the number of bytes
+//----already transferred and the number of total bytes to transfer. They must not be changed!
+//----They must be present in every translation.
+GROUP_UPGRADE_STATUSTEXT_TRANSFER_PROGRESS = "${CurrentBytes} of ${TotalBytes} bytes transferred.";
+GROUP_UPGRADE_STATUSTEXT_ENTER_APP         = "Starting firmware...";
+GROUP_UPGRADE_STATUSTEXT_SUCCESS           = "Firmware upgrade finished successfully.";
+GROUP_UPGRADE_STATUSTEXT_FAILED            = "Firmware upgrade failed!";
+//----NOTE: The string ${NewVersion} is a placeholder for the version of the new firmware and
+//----must not be changed! It must be present in every translation.
+GROUP_UPGRADE_STATUSTEXT_NOT_REQUIRED      = "The new firmware version is ${NewVersion}. The version of the firmware running in the device is newer. No upgrade is required.";
+GROUP_UPGRADE_BUTTON_START                 = "Start";
+
+//----
+//----common message box texts
+//----
+MESSAGE_BOX_ERROR_TITLE                    = "Error";
+MESSAGE_BOX_INFO_TITLE                     = "Note";
+MESSAGE_BOX_BUTTON_YES                     = "Yes";
+MESSAGE_BOX_BUTTON_NO                      = "No";
+
+//----
+//----error messages
+//----
+ERROR_MESSAGE_COMMON                       = "An error occurred. Disconnect the device from the computer, reconnect it and restart the application.";
+ERROR_MESSAGE_UPGRADE_FAILED               = "The firmware upgrade has failed. To return the device to normal state, disconnect it from the computer,
+                                              switch it off and on again, and then connect it again.";
+ERROR_MESSAGE_NO_FIRMWARE_FILE_AVAILABLE   = "No firmware is available for this device.";
+ERROR_MESSAGE_OPEN_FIRMWARE_FILE_FAILED    = "Unable to open the specified firmware file.";
+ERROR_MESSAGE_INVALID_FIRMWARE_FILE        = "The specified firmware file is invalid.";
+ERROR_MESSAGE_READ_FIRMWARE_FILE_FAILED    = "Unable to read from the specified firmware file.";
+ERROR_MESSAGE_NO_DEVICE                    = "No device found. Please plug in the device you want to upgrade.";
+ERROR_MESSAGE_TOO_MANY_DEVICES             = "More than one device found. Please plug in exactly one device.";
+ERROR_MESSAGE_DEVICE_IN_USE                = "Another application is currently accessing the connected device. Please close all applications and try again.";
+
+//----
+//----questions
+//----
+QUESTION_YESNO_CONFIRM_TO_ABORT            = "The firmware upgrade is currently running. The device could be damaged if you abort now. Do you really want to abort?";
+QUESTION_YESNO_CONFIRM_TO_DOWNGRADE        = "The firmware version on the device is newer. Do you really want to continue?";

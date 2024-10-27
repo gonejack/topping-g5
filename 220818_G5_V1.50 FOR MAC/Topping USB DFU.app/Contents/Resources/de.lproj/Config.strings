@@ -1,0 +1,83 @@
+
+//----
+//----common application texts
+//----
+APP_TITLE                                  = "ToriLogic USB DFU";
+APP_MENU_ITEM_ABOUT                        = "Über die Firmwareaktualisierung für USB Geräte";
+APP_MENU_ITEM_QUIT                         = "Firmwareaktualisierung für USB Geräte beenden";
+APP_BUTTON_CLOSE                           = "Beenden";
+
+//----
+//----language selection dialog texts
+//----
+LANG_SELECTION_DLG_SUBTITLE                = "Bitte wählen Sie eine Sprache.";
+LANG_SELECTION_DLG_BUTTON_CONTINUE         = "Weiter";
+
+//----
+//----device-specific texts
+//----
+GROUP_DEVICE_TITLE                         = "Gerät";
+GROUP_DEVICE_LABEL_MANUFACTURER            = "Hersteller:";
+GROUP_DEVICE_LABEL_PRODUCT                 = "Produkt:";
+GROUP_DEVICE_LABEL_VID_PID                 = "VID/PID:";
+GROUP_DEVICE_LABEL_SERIAL_NUMBER           = "Seriennummer:";
+GROUP_DEVICE_LABEL_FIRMWARE_VERSION        = "Aktuelle Firmware:";
+
+//----
+//----firmware-specific texts
+//----
+GROUP_FIRMWARE_TITLE                       = "Firmware";
+GROUP_FIRMWARE_BUTTON_BROWSE               = "Durchsuchen...";
+
+//----
+//----upgrade-specific texts
+//----
+GROUP_UPGRADE_TITLE                        = "Aktualisierung";
+GROUP_UPGRADE_STATUSTEXT_IDLE              = "";
+GROUP_UPGRADE_STATUSTEXT_OPEN_DEVICE       = "Gerät wurde erkannt.";
+GROUP_UPGRADE_STATUSTEXT_READY             = "Bereit zum Aktualisieren der Firmware.";
+//----NOTE: The strings ${CurrentVersion} and ${NewVersion} are placeholders for the current and
+//----new firmware version and must not be changed! They must be present in every translation.
+GROUP_UPGRADE_STATUSTEXT_READY_VERSION     = "Bereit zum Aktualisieren der Firmware von Version ${CurrentVersion} auf ${NewVersion}.";
+GROUP_UPGRADE_STATUSTEXT_INIT              = "Initialisierung...";
+GROUP_UPGRADE_STATUSTEXT_ENTER_DFU         = "Starte Aktualisierungsmodus...";
+GROUP_UPGRADE_STATUSTEXT_IN_PROGRESS       = "Firmware wird aktualisiert...";
+//----NOTE: The strings ${CurrentBytes} and ${TotalBytes} are placeholders for the number of bytes
+//----already transferred and the number of total bytes to transfer. They must not be changed!
+//----They must be present in every translation.
+GROUP_UPGRADE_STATUSTEXT_TRANSFER_PROGRESS = "${CurrentBytes} von ${TotalBytes} Bytes übertragen.";
+GROUP_UPGRADE_STATUSTEXT_ENTER_APP         = "Firmware wird gestartet...";
+GROUP_UPGRADE_STATUSTEXT_SUCCESS           = "Die Firmware wurde erfolgreich aktualisiert.";
+GROUP_UPGRADE_STATUSTEXT_FAILED            = "Die Aktualisierung der Firmware ist fehlgeschlagen!";
+//----NOTE: The string ${NewVersion} is a placeholder for the version of the new firmware and
+//----must not be changed! It must be present in every translation.
+GROUP_UPGRADE_STATUSTEXT_NOT_REQUIRED      = "Die neue Firmwareversion ist ${NewVersion}. Die Firmware des Gerätes ist neuer. Eine Aktualisierung ist nicht erforderlich.";
+GROUP_UPGRADE_BUTTON_START                 = "Start";
+
+//----
+//----common message box texts
+//----
+MESSAGE_BOX_ERROR_TITLE                    = "Fehler";
+MESSAGE_BOX_INFO_TITLE                     = "Hinweis";
+MESSAGE_BOX_BUTTON_YES                     = "Ja";
+MESSAGE_BOX_BUTTON_NO                      = "Nein";
+
+//----
+//----error messages
+//----
+ERROR_MESSAGE_COMMON                       = "Es ist ein Fehler aufgetreten. Trennen Sie das Gerät vom Rechner, verbinden Sie es wieder und starten Sie die Anwendung erneut.";
+ERROR_MESSAGE_UPGRADE_FAILED               = "Die Firmwareaktualisierung ist fehlgeschlagen. Um das Gerät wieder in den Normalzustand zu versetzen, trennen Sie es bitte vom Rechner,
+                                              schalten Sie es aus und wieder an und verbinden Sie es anschließend wieder.";
+ERROR_MESSAGE_NO_FIRMWARE_FILE_AVAILABLE   = "Für dieses Gerät ist keine Firmware verfügbar.";
+ERROR_MESSAGE_OPEN_FIRMWARE_FILE_FAILED    = "Die Firmwaredatei konnte nicht geöffnet werden.";
+ERROR_MESSAGE_INVALID_FIRMWARE_FILE        = "Die Firmwaredatei ist ungültig.";
+ERROR_MESSAGE_READ_FIRMWARE_FILE_FAILED    = "Die Firmwaredatei konnte nicht gelesen werden.";
+ERROR_MESSAGE_NO_DEVICE                    = "Kein Gerät gefunden. Bitte schließen Sie das zu aktualisierende Gerät an.";
+ERROR_MESSAGE_TOO_MANY_DEVICES             = "Mehr als ein Gerät gefunden. Bitte schließen Sie genau ein Gerät an.";
+ERROR_MESSAGE_DEVICE_IN_USE                = "Eine andere Anwendung greift momentan auf das angeschlossene Gerät zu. Bitte schließen Sie alle Anwendungen und versuchen Sie es dann erneut.";
+
+//----
+//----questions
+//----
+QUESTION_YESNO_CONFIRM_TO_ABORT            = "Die Firmware wird gerade aktualisiert. Wenn Sie jetzt abbrechen, kann das Gerät beschädigt werden. Möchten Sie wirklich abbrechen?";
+QUESTION_YESNO_CONFIRM_TO_DOWNGRADE        = "Die Version der Firmware auf dem Gerät ist neuer. Wollen Sie wirklich fortfahren?";

@@ -1,0 +1,4 @@
+
+CFBundleDisplayName      = "ToriLogic USB DFU";
+CFBundleName             = "ToriLogic USB DFU";
+NSHumanReadableCopyright = "Copyright © 2018-2020";

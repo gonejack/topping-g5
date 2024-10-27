@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DFU FormatVersionMajor="1" FormatVersionMinor="0">
+    <DfuDllFileName>Topping_dfu.dll</DfuDllFileName>
+    <SupportedDevices>
+        <Device UseXmosDfuExtensions="True">
+            <AppMode PID="0x8750" VID="0x152a"/>
+            <DfuMode PID="0x8750" VID="0x152a"/>
+        </Device>
+    </SupportedDevices>
+    <CheckFirmwareVersion>Warn</CheckFirmwareVersion>
+    <AllowToBrowseForFirmwareFile>True</AllowToBrowseForFirmwareFile>
+    <AllowToAbortUpgrade>False</AllowToAbortUpgrade>
+    <DisplayLanguageSelectionDialog>False</DisplayLanguageSelectionDialog>
+</DFU>
